@@ -1,0 +1,29 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<div class="header-paragraph"><h1>Choose from the following courses and sign up</h1></div>
+
+
+
+<div class="row slider">
+	<div class="outer">
+		@if(courses != null)
+		{
+			foreach(var course in courses)
+			{
+				<div class="inner">
+				  <div class="background-image" style="background-image: url('./images/content/@course.ImageGuid\.png');"></div>
+				  <div class="course-name">
+					  <a>@course.Name</a> </div>
+					 <div class="signup-button"> 
+						 <a class="course-sign-up btn btn-primary" href="#@course.Id">Sign up</a>
+				  </div>
+				</div>
+			}
+		}
+
+		
+
+	</div>
+</div>
