@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace OL.Tests
 {
-    public abstract class BaseTestDbContext
+    public abstract class ServiceTest
     {
         public TestContext TestContext { get; set; }    
         public DbContextOptions<ApplicationDbContext> ApplicationContextOptions { get; set; }
